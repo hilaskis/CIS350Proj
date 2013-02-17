@@ -54,9 +54,11 @@ public class TwitModel extends AbstractTableModel{
 		Object val = null;
 		switch(col){
 		case 0:
-			val = myTweets.get(row).getCreatedAt(); break;
+			val = myTweets.get(row).getCreatedAt(); 
+			break;
 		case 1:
-			val = myTweets.get(row).getLoginName(); break;
+			val = myTweets.get(row).getLoginName(); 
+			break;
 		case 2:
 			val = myTweets.get(row).getDisplayName();
 			break;
@@ -90,7 +92,7 @@ public class TwitModel extends AbstractTableModel{
 		}
 	}
 	/**
-	 * Removes a Tweets from the array List.
+	 * Removes a Tweet from the array List.
 	 * @param index - Position of the value
 	 */
 	public void remove(int index) {
@@ -147,7 +149,7 @@ public class TwitModel extends AbstractTableModel{
 	 * @param index - index that is selected
 	 * @return - the text of that index.
 	 */
-	public String retriveDisplayStatis(int index) {
+	public String retriveDisplayStatus(int index) {
 		return myTweets.get(index).getText();	
 	}
 	/**
